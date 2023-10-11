@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountSpecFlow", "Bank
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack", "Blackjack\Blackjack.csproj", "{14F5F053-6EFE-4EE5-9B5F-C53DAA91AF7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackjackTest", "BlackjackTest\BlackjackTest.csproj", "{7DC1DE33-C7C6-4298-89AB-1BCA2FF0F040}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{14F5F053-6EFE-4EE5-9B5F-C53DAA91AF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14F5F053-6EFE-4EE5-9B5F-C53DAA91AF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14F5F053-6EFE-4EE5-9B5F-C53DAA91AF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC1DE33-C7C6-4298-89AB-1BCA2FF0F040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC1DE33-C7C6-4298-89AB-1BCA2FF0F040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC1DE33-C7C6-4298-89AB-1BCA2FF0F040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC1DE33-C7C6-4298-89AB-1BCA2FF0F040}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

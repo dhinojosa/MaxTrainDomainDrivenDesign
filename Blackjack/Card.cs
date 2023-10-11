@@ -39,8 +39,8 @@ namespace Blackjack
             lines[6] = "└─────────┘";
 
             ConsoleColor cardColor = "♥♦".Contains(_suit) ? ConsoleColor.Red : ConsoleColor.Black;
-
             Console.ForegroundColor = cardColor;
+            Console.WriteLine($"Updated Foreground Color2: {Console.ForegroundColor}");
             return string.Join(Environment.NewLine, lines);
         }
 
