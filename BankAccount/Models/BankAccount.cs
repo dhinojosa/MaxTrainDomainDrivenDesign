@@ -1,4 +1,4 @@
-namespace SampleApplication.Models;
+namespace BankAccount.Models;
 
 public class BankAccount
 {

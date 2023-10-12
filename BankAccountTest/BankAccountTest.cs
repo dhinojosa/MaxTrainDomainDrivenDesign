@@ -1,15 +1,13 @@
-using SampleApplication.Models;
-
 namespace SampleApplicationTest;
 
 public class BankAccountTests
 {
-    private BankAccount? _bankAccount;
+    private BankAccount.Models.BankAccount? _bankAccount;
 
     [SetUp]
     public void Setup()
     {
-        _bankAccount = new BankAccount(120,"1203-102-12020");
+        _bankAccount = new BankAccount.Models.BankAccount(120,"1203-102-12020");
     }
 
     [Test]

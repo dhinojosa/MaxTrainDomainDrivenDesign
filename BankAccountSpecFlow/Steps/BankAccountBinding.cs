@@ -1,19 +1,18 @@
 using System.Diagnostics;
 using NUnit.Framework;
-using SampleApplication.Models;
 
 namespace SpecFlowBankAccount.Steps;
 
 [Binding]
 public class BankAccountBinding
 {
-    private BankAccount? _bankAccount;
+    private BankAccount.Models.BankAccount? _bankAccount;
 
 
     [Given(@"an empty bank account")]
     public void GivenAnEmptyBankAccount()
     {
-        _bankAccount = new BankAccount(0, "302939232-1221");
+        _bankAccount = new BankAccount.Models.BankAccount(0, "302939232-1221");
     }
 
     [When(@"a deposit of (.*) dollars is made")]
