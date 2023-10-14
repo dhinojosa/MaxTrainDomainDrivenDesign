@@ -1,3 +1,6 @@
+using System.Text;
+using Ansi;
+
 namespace Blackjack
 {
     public class Card
@@ -38,10 +41,9 @@ namespace Blackjack
             lines[5] = $"│       {_rank}{(_rank == "10" ? "" : " ")}│";
             lines[6] = "└─────────┘";
 
-            ConsoleColor cardColor = "♥♦".Contains(_suit) ? ConsoleColor.Red : ConsoleColor.Black;
-            Console.ForegroundColor = cardColor;
-            Console.WriteLine($"Updated Foreground Color2: {Console.ForegroundColor}");
-            return string.Join(Environment.NewLine, lines);
+            var modeColor = "♥♦".Contains(_suit) ? Mode.ForegroundRed : Mode.ForegroundBlack;
+            var separator = new StringBuilder().Down(1).Left(11).ToString();
+            return new StringBuilder().SetMode(modeColor) + string.Join(separator, lines);
         }
 
         public override string ToString()
@@ -49,13 +51,13 @@ namespace Blackjack
             return $"Card {{ suit={_suit}, rank={_rank} }}";
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (this == obj) return true;
-            if (GetType() != obj.GetType()) return false;
+            if (obj != null && GetType() != obj.GetType()) return false;
 
-            Card card = (Card)obj;
-            return _suit == card._suit && _rank == card._rank;
+            var otherCard = obj as Card;
+            return otherCard != null && _suit == otherCard._suit && _rank == otherCard._rank;
         }
 
         public override int GetHashCode()

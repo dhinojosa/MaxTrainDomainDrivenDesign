@@ -8,13 +8,14 @@ public class Deck
     {
         List<string> cardValues = new List<string> { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
         List<string> suits = new List<string> { "♠", "♦", "♥", "♣" };
-        foreach (string suit in suits)
+        foreach (var suit in suits)
         {
-            foreach (string cardValue in cardValues)
+            foreach (var cardValue in cardValues)
             {
                 _cards.Add(new Card(suit, cardValue));
             }
         }
+
         Shuffle(_cards);
     }
 

@@ -1,8 +1,11 @@
+using System.Text;
+using Ansi;
+
 namespace Blackjack;
 
 public class Game
 {
-    private readonly Deck _deck;
+    private readonly Deck _deck = new();
 
     private readonly List<Card> _dealerHand = new List<Card>();
     private readonly List<Card> _playerHand = new List<Card>();
@@ -10,25 +13,25 @@ public class Game
     public static void Main(string[] args)
     {
         Game game = new Game();
-        Console.BackgroundColor = ConsoleColor.White;
-        Console.Clear();
-        Console.SetCursorPosition(0, 0);
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.Write("Welcome to");
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" Jitterted's");
-        Console.ForegroundColor = ConsoleColor.Black;
-        Console.WriteLine(" BlackJack");
+        Console.WriteLine(new StringBuilder()
+            .SetMode(Mode.BackgroundWhite)
+            .SetMode(Mode.ForegroundBlack)
+            .Clear()
+            .SetCursorPosition(0, 0)
+            .SetMode(Mode.ForegroundGreen)
+            .Append("Welcome to")
+            .SetMode(Mode.ForegroundRed)
+            .Append("Jitterted's")
+            .SetMode(Mode.ForegroundBlack)
+            .Append("Blackjack")
+            .HideCursor()
+            .SaveState()
+        );
 
         game.InitialDeal();
         game.Play();
 
         Console.ResetColor();
-    }
-
-    public Game()
-    {
-        _deck = new Deck();
     }
 
     public void InitialDeal()
@@ -129,7 +132,7 @@ public class Game
     private void DisplayGameState()
     {
         Console.Clear();
-        Console.SetCursorPosition(0, 0);
+        Console.SetCursorPosition(0, 2);
         Console.WriteLine("Dealer has: ");
         Console.WriteLine(_dealerHand[0].Display()); // First card is face up
 
@@ -144,25 +147,21 @@ public class Game
 
     private void DisplayBackOfCard()
     {
-        Console.SetCursorPosition(0, 7);
-        Console.Write("┌─────────┐");
-        Console.SetCursorPosition(12, 8);
-        Console.Write("│░░░░░░░░░│");
-        Console.SetCursorPosition(12, 9);
-        Console.Write("│░ J I T ░│");
-        Console.SetCursorPosition(12, 10);
-        Console.Write("│░ T E R ░│");
-        Console.SetCursorPosition(12, 11);
-        Console.Write("│░ T E D ░│");
-        Console.SetCursorPosition(0, 12);
-        Console.Write("└─────────┘");
+        Console.WriteLine(new StringBuilder().Up(7)
+            .Right(12)
+            .Append("┌─────────┐").Down(1).Left(11)
+            .Append("│░░░░░░░░░│").Down(1).Left(11)
+            .Append("│░ J I T ░│").Down(1).Left(11)
+            .Append("│░ T E R ░│").Down(1).Left(11)
+            .Append("│░ T E D ░│").Down(1).Left(11)
+            .Append("│░░░░░░░░░│").Down(1).Left(11)
+            .Append("└─────────┘"));
     }
 
     private void DisplayHand(List<Card> hand)
     {
-        Console.WriteLine(Environment.NewLine);
-        Console.SetCursorPosition(Console.CursorLeft + 1, Console.CursorTop - 6);
-        Console.WriteLine(hand.Select(card => card.Display()));
+        var strings = hand.Select(card => card.Display()).ToArray();
+        Console.WriteLine(string.Join(new StringBuilder().Up(6).Right(1).ToString(), strings));
     }
 
     private void DisplayFinalGameState()
