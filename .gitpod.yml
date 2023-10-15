@@ -5,6 +5,6 @@
 image: gitpod/workspace-dotnet
 vscode:
   extensions:
-    - ms-dotnettools.csharp
     - alexkrechik.cucumberautocomplete
     - ms-azuretools.vscode-docker
+    - muhammad-sammy.csharp
