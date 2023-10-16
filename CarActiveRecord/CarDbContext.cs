@@ -9,6 +9,6 @@ public class CarDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=51170;Database=postgres;Username=postgres;Password=postgres");
+        optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=51170;Database=docker;Username=docker;Password=docker");
     }
 }

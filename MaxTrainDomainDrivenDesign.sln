@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarActiveRecord", "CarActiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarActiveRecordTest", "CarActiveRecordTest\CarActiveRecordTest.csproj", "{FBB0EE8C-6A3F-43BF-8A72-41EB35411F1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarTransactionScriptTest", "CarTransactionScriptTest\CarTransactionScriptTest.csproj", "{8681C73D-7086-4472-87CB-02FF6FA3F175}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{FBB0EE8C-6A3F-43BF-8A72-41EB35411F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBB0EE8C-6A3F-43BF-8A72-41EB35411F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBB0EE8C-6A3F-43BF-8A72-41EB35411F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8681C73D-7086-4472-87CB-02FF6FA3F175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8681C73D-7086-4472-87CB-02FF6FA3F175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8681C73D-7086-4472-87CB-02FF6FA3F175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8681C73D-7086-4472-87CB-02FF6FA3F175}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

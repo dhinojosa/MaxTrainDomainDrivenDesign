@@ -6,7 +6,7 @@ using WireMock.Settings;
 
 namespace PollyTest;
 
-public class Tests
+public class RetryPolly
 {
     private readonly WireMockServer _server = WireMockServer.Start(new WireMockServerSettings
     {
