@@ -4,88 +4,89 @@ Max Train Domain Driven Design in C#
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/github.com/dhinojosa/MaxTrainDomainDrivenDesign)
 
 ### Week 1/Day 1
-What Domain-Driven Design Teaches
-The Purpose of DDD
-Subdomains: Core, Supporting, and Generic
-Bounded Contexts
-Mixing Subdomains and Bounded Contexts
-Relationship between Microservice and Subdomains and Bounded Contexts
-Context Mapping
-Lab: Context Mapping
-Immutability
-Value Objects
-Entities
-Aggregates
-Lab: Create an Aggregate Boundary
+1. What Domain-Driven Design Teaches
+2. The Purpose of DDD
+3. Subdomains: Core, Supporting, and Generic
+4. Bounded Contexts
+5. Mixing Subdomains and Bounded Contexts
+6. Relationship between Microservice and Subdomains and Bounded Contexts
+7. Context Mapping
+8. Lab: Context Mapping
+9. Immutability
+10. Value Objects
+11. Entities
+12. Aggregates
+13. Lab: Create an Aggregate Boundary
 
 ### Week 1/Day 2
-Domain Events
-Active Record
-Transaction Script
-Lab: Creating Effective Active Record & TXScripts with Test Containers
-Layered Architecture
-Hexagonal Architecture
-Lab: Refactoring into Hexagonal Architecture
-Event Storming
-Lab: Event Storming 
-Domain Events
+1. Domain Events
+2. Active Record
+3. Transaction Script
+4. Lab: Creating Effective Active Record & TXScripts with Test Containers
+5. Layered Architecture
+6. Hexagonal Architecture
+7. Lab: Refactoring into Hexagonal Architecture
+8. Event Storming
+9. Lab: Event Storming 
+10. Domain Events
 
 ### Week 1/Day 3
-Circuit Breaker
-Lab: Circuit Breaking a Problematic Service
-Bulkhead
-Lab: Create Separate Bulkheads to prevent saturation
-Retry
-The risk of retrying
-Lab: Creating Retry Strategies
-Ambassador Pattern, the Sidecar
-Purpose and Reasoning for the Sidecar
- Establishing Ambassadors in Kubernetes with Istio
- Final Questions
-Conclusions
+1. Circuit Breaker
+2. Lab: Circuit Breaking a Problematic Service
+3. Bulkhead
+4. Lab: Create Separate Bulkheads to prevent saturation
+5. Retry
+6. The risk of retrying
+7. Lab: Creating Retry Strategies
+8. Ambassador Pattern, the Sidecar
+9. Purpose and Reasoning for the Sidecar
+10. Establishing Ambassadors in Kubernetes with Istio
+11. Final Questions
+12. Conclusions
 
 
 ### Week 2/Day 1
-Tying in the Domain Events from the first week
-Event Sourcing
-How do you craft an event?
-How do we emit events in our design?
-How long should we hold events?
-Introduction to Kafka
-Kafka Architecture
-Pub/Sub Architecture
-Sharding and Consistent Hashing
-Creating a Producer
-Lab: Creating a Producer
-Acknowledgments (Ack), 
+
+1. Tying in the Domain Events from the first week
+2. Event Sourcing
+3. How do you craft an event?
+4. How do we emit events in our design?
+5. How long should we hold events?
+6. Introduction to Kafka
+7. Kafka Architecture
+8. Pub/Sub Architecture
+9. Sharding and Consistent Hashing
+10. Creating a Producer
+11. Lab: Creating a Producer
+12. Acknowledgments (Ack), 
 
 ### Week 2/Day 2
-Creating a Kafka Consumer
-Lab: Creating a Kafka Consumer
-Preventing Data Loss with Exactly Once Semantics
-Kafka Streams
-Lab: Kafka Streams
-KSQLDB
-Lab: KSQLDB
-Kafka Connect - Connecting the Kafka to Databases and MQ
-Change Data Capture
-Lab: Kafka Connect
-Materialized Views
-CQRS: Command Query Responsibility Segregation
-Lab: CQRS
+1. Creating a Kafka Consumer
+2. Lab: Creating a Kafka Consumer
+3. Preventing Data Loss with Exactly Once Semantics
+4. Kafka Streams
+5. Lab: Kafka Streams
+6. KSQLDB
+7. Lab: KSQLDB
+8. Kafka Connect - Connecting the Kafka to Databases and MQ
+9. Change Data Capture
+10. Lab: Kafka Connect
+11. Materialized Views
+12. CQRS: Command Query Responsibility Segregation
+13. Lab: CQRS
 
 ### Week 2/Day 3
 
-Event-Driven Architecture
-Service Brokers & Service Broker APIs
-Strangler Fig Deploying Services Gradually
-Lab: Strangler Fig
-Preventing Data Loss
-Deconstructing the Monolith to Microservices
-Microservices - Bounded Context or Subdomain?
-Why shouldn't you go too micro in microservices
-Microservice tips & best practices
-Data Storage and Ownership Today
-Lab: Discuss your plans for your company
-Final Questions
-Conclusion
+1. Event-Driven Architecture
+2. Service Brokers & Service Broker APIs
+3. Strangler Fig Deploying Services Gradually
+4. Lab: Strangler Fig
+5. Preventing Data Loss
+6. Deconstructing the Monolith to Microservices
+7. Microservices - Bounded Context or Subdomain?
+8. Why shouldn't you go too micro in microservices
+9. Microservice tips & best practices
+10. Data Storage and Ownership Today
+11. Lab: Discuss your plans for your company
+12. Final Questions
+13. Conclusion
