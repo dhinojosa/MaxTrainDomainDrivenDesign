@@ -3,6 +3,22 @@ Max Train Domain Driven Design in C#
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/github.com/dhinojosa/MaxTrainDomainDrivenDesign)
 
+## Introduction
+1. What is it that you do?
+2. What is your title?
+3. What is your experience in C#/.Net?
+4. What is your experience with Domain Driven Design?
+5. What is your experience with Container/Kubernetes?
+6. What do you like to do for Zen?
+   a. Family Time
+   b. Walking/Hiking
+   c. Cycling
+   d. Board Games, Video Games
+   e. Reading
+   f. Badminton
+   g. Gardening
+
+
 ### Week 1/Day 1
 1. What Domain-Driven Design Teaches
 2. The Purpose of DDD
